@@ -1,0 +1,67 @@
+{
+    "posts": [
+      { "id": 1, 
+      "title": "Canva", 
+      "img":"https://eep.io/images/yzco4xsimv0y/egMxvwdsj41K5eESLhWBO/cf823adbd311e33919f97ffc5bf3181d/Canva.jpg?w=196&fm=webp&q=80",
+      "des":"The easiest way to create stunning graphics for your newsletter. Made with the non-designer in mind.",
+      "about":"Canva’s templates are your shortcut to great design. And our simple drag-and-drop tools make it easy for you to customize a template until you get exactly the look you need."
+
+     },
+     { "id": 2, 
+      "title": "Mailchimp for Salesforce", 
+      "img":"https://eep.io/images/yzco4xsimv0y/51oq4AakIqo8fATlHgqHK0/02a750b1c1a16745296dca6fa7cb830c/Salesforce__1_.jpg?w=196&fm=webp&q=80",
+      "des":"Sync your Mailchimp subscribers and Salesforce® leads across platforms so you can manage your contacts, view campaign stats and more.Connect Now",
+      "about":"This free integration will sync all of your Mailchimp subscribers into Salesforce® and link them to existing contacts and leads in your CRM, creating a shared view across platforms. You can also allow Mailchimp to create new leads in Salesforce®."
+
+     },
+     { "id": 3, 
+     "title": "Instagram", 
+     "img":"https://eep.io/images/yzco4xsimv0y/531mfx6M064JmZUjgX4Gy3/546442eb99f247015a8dfbca4aee94b6/Instagram_Glyph_Gradient_copy.png?w=300&fm=webp&q=70",
+     "des":"Promote and share your Instagram posts in email campaigns with easy-to-add content blocks.",
+     "about":"Add a block to your email campaigns (or templates) that features your Instagram profile. This makes it easy for your audience to find your account and follow your brand."
+
+    },
+    { "id": 4, 
+    "title": "Shopify", 
+    "img":"https://eep.io/images/yzco4xsimv0y/44dW9Z4hibyDYi0qggfets/b01884985e996ffb5dc133556b92bb7a/Shopify__1_.jpg?w=196&fm=webp&q=80",
+    "des":"Sync Shopify customers, products, and purchase data to Mailchimp.",
+    "about":"Connect your Shopify store to a Mailchimp audience to unlock new features that help you drive sales. Level up your email and social marketing efforts with instant access to your Shopify customers, orders, and products inside Mailchimp."
+
+   },
+   { "id": 5, 
+   "title": "Google Analytics", 
+   "img":"https://eep.io/images/yzco4xsimv0y/7mpZ7UZrdzk2BmWX1OnRvb/5e610ecd21eeb25d0b82b098ce424e34/Google_Analytics2.jpg?w=196&fm=webp&q=80",
+   "des":"Unlock powerful insights with campaign engagement data and tracking for your website",
+   "about":"Gain a deeper understanding of how people move between your email campaigns and website. Google and Mailchimp allow you to see who is engaging with your automated or bulk email campaigns and how."
+
+  },
+  { "id": 6, 
+  "title": "WooCommerce", 
+  "img":"https://eep.io/images/yzco4xsimv0y/2uruOq31Y1FKdghFWn5zMg/8a35f3f9e463ba34038f3c3f16ccb635/WooCommerce.jpg?w=196&fm=webp&q=80",
+  "des":"Get access to powerful sales-driving marketing features allowing you to better engage and build relationships with your customers.",
+  "about":"WooCommerce is a free and open-source platform that democratizes commerce and empowers you to sell anything, anywhere. When you connect your WooCommerce store to Mailchimp, you can sync customers, orders, products and promo codes so you can personalize your marketing and sell more stuff."
+ },
+ { "id": 7, 
+  "title": "Quickbox Online", 
+  "img":"https://eep.io/images/yzco4xsimv0y/uZVnrVt3DO1G4Ec5G4pvs/e6c9d3c2613827f7dd238f1c5e0b02d9/Quickbooks.jpg?w=196&fm=webp&q=80",
+  "des":"Bring together your marketing tools and invoice data, which could help you speed up sales and accelerate your growth.",
+  "about":"Sync real-time data from QuickBooks Online into Mailchimp, automatically giving you accurate, organized, and info-rich insights."
+ },
+ { "id": 8, 
+ "title": "Sqarespace Commerce", 
+ "img":"https://eep.io/images/yzco4xsimv0y/2klSrOoLZKmLuGKZjKT9o3/ca400f60c2f3673f3ab9b52f4d03360d/Squarespace.jpg?w=196&fm=webp&q=80",
+ "des":"Market your ecommerce business and drive sales when you connect your Squarespace commerce and website data to Mailchimp.",
+ "about":"Sync real-time data from QuickBooks Online into Mailchimp, automatically giving you accurate, organized, and info-rich insights."
+},
+{ "id": 9, 
+ "title": "Zapier", 
+ "img":"https://eep.io/images/yzco4xsimv0y/2klSrOoLZKmLuGKZjKT9o3/ca400f60c2f3673f3ab9b52f4d03360d/Squarespace.jpg?w=196&fm=webp&q=80",
+ "des":"Zapier is the easiest way to connect Mailchimp with thousands of best-in-breed web services across all use-cases.",
+ "about":"From posting your newsletters on social media to replicating mailing lists or capturing customers as new subscribers, you'll find a wealth of pre-made solutions (Zaps) for any given use-case or create your own custom Zaps."
+}
+
+
+
+    ]
+    
+  }
