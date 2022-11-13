@@ -12,10 +12,18 @@ import {
   MenuOptionGroup,
   MenuDivider,
 } from '@chakra-ui/react'
-
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+} from '@chakra-ui/react'
 import React, { useState } from 'react'
 import { useEffect } from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
+import Footer from '../components/Footer'
 
 const Home = () => {
 const [data,setData] = useState([])
@@ -41,31 +49,42 @@ useEffect(()=>{
             <Button borderRadius='20px' mt='1cm' bg='yellow' borderColor='black' variant='solid'>Sing Up</Button>
     </Container>
   <Box w='full' display='flex' margin='auto' mt='30px' borderColor='black' height='19cm'>
+     
     <Box className='shadow' w='25%' h='14cm'>
+      <Link to='/plans'> 
       <Image src='https://eep.io/images/yzco4xsimv0y/33f3mgIWbzKjIpIRJi2f5v/6bd36bba38b7f6a94d587605ab9a7d75/Desktop_Feature_Cards_1_Automations.jpeg?w=630&fm=webp&q=80' alt=''></Image>
+      </Link>
       <Box w='full' h='4cm' backgroundColor='yellow'>
       <Text pr='10px' pl='10px' pt='1cm' fontSize='md' align='left'>Send the right message at the right time to convert more customers.</Text>
       <Button mt='20px' borderRadius='20px' variant='outline' borderColor='black'>Learn More</Button>
+     
       </Box>
+
     </Box>
-    <Box w='25%'>
+    <Box className='shadow' w='25%'>
+      <Link to='/plans'>
     <Image src='https://eep.io/images/yzco4xsimv0y/hBcOt3RZ5DOhMJD2Hi2Z2/96b28d17c45e9376731ad825b002b0ff/Desktop_Feature_Cards_2_Analytics.png?w=630&fm=webp&q=80' alt=''></Image>
-    <Box w='full' h='4cm'>
-      <Text pr='10px' pl='10px' pt='1cm' fontSize='md' align='left'>Send the right message at the right time to convert more customers.</Text>
+    </Link>
+    <Box  w='full' h='4cm'>
+      <Text pr='10px' pl='10px' pt='1cm' fontSize='md' align='left'>Get AI-assisted suggestions to help make your content more engaging.</Text>
       <Button mt='20px' borderRadius='20px' variant='outline' borderColor='black'>Learn More</Button>
       </Box>
     </Box>
-    <Box w='25%'>
+    <Box className='shadow' w='25%'>
+      <Link to='/plans'>
     <Image src='https://eep.io/images/yzco4xsimv0y/5xqzo6y8Z7anw9VQXJarpj/5f91182af7bf16ecc34b487a619d0a54/Desktop_Feature_Cards_3_Segmentation.jpeg?w=630&fm=webp&q=80' alt=''></Image>
+    </Link>
     <Box w='full' h='4cm' backgroundColor='orange.600'>
-      <Text pr='10px' pl='10px' pt='1cm' fontSize='md' align='left'>Send the right message at the right time to convert more customers.</Text>
+      <Text pr='10px' pl='10px' pt='1cm' fontSize='md' align='left'>Boost customer loyalty by predicting the right ones to target.</Text>
       <Button mt='20px' borderRadius='20px' variant='outline' borderColor='black'>Learn More</Button>
       </Box>
     </Box>
-    <Box w='25%'>
+    <Box className='shadow' w='25%'>
+      <Link to='/plans'>
     <Image src='https://eep.io/images/yzco4xsimv0y/lsHRpmOI81ZcFS1Yld0Bs/1e2812587cd0f3089061bd4b513fd6d0/Desktop_Feature_Cards_4_Integrations.png?w=630&fm=webp&q=80' alt=''></Image>
-    <Box w='full' h='4cm'>
-      <Text pr='10px' pl='10px' pt='1cm' fontSize='md' align='left'>Send the right message at the right time to convert more customers.</Text>
+    </Link>
+    <Box  w='full' h='4cm'>
+      <Text pr='10px' pl='10px' pt='1cm' fontSize='md' align='left'>Connect more tools, get more data, save time and make better decisions.</Text>
       <Button mt='20px' borderRadius='20px' variant='outline' borderColor='black'>Learn More</Button>
       </Box>
     </Box>
@@ -204,35 +223,43 @@ useEffect(()=>{
         <Box backgroundColor='yellow.400' h='full' w='50%' >
           <VStack w='80%' margin='auto' marginTop='4cm'>
             <Text fontWeight='normal' color='black' fontSize='4xl'>Keep customers ready to buy with engaging content</Text>
-            <Menu>
-            <MenuButton as={Button} bg='yellow.400' rightIcon={<ChevronDownIcon />}>
-              Content Optimizer
-            </MenuButton>
-            <MenuList bg='yellow.400' borderColor='yellow.400'>
-              <MenuItem w='7cm' bg='yellow.400'>
-              <Text>Learn how your emails compare to the top-performing campaigns in your industry and get data-driven suggestions for improving your copy, imagery, and layout.</Text>
-                </MenuItem>
-              
-            </MenuList>
-           </Menu>
+            <Accordion>
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box flex='1' textAlign='left'>
+          Content Optimizer
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+    </AccordionPanel>
+  </AccordionItem>
+</Accordion>
            <Divider color='grey'/>
-           <Menu>
-            <MenuButton as={Button} bg='yellow.400' rightIcon={<ChevronDownIcon />}>
-              Creative Assistant
-            </MenuButton>
-            <MenuList bg='yellow.400'>
-              <MenuItem w='7cm'>
-              <Text>Learn how your emails compare to the top-performing campaigns in your industry and get data-driven suggestions for improving your copy, imagery, and layout.</Text>
-                </MenuItem>
-
-                <MenuItem>
-                <Button bg='yellow.400'>
-                  Learn More <ChevronRightIcon/>
-                  </Button>
-                </MenuItem>
-              
-            </MenuList>
-           </Menu>
+           <Accordion>
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box flex='1' textAlign='left'>
+          Creative Assistant
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+    </AccordionPanel>
+  </AccordionItem>
+</Accordion>
           </VStack>
         </Box>
         <Box>
@@ -271,80 +298,22 @@ useEffect(()=>{
         {
           data.map((e)=>(
             <GridItem key={e.id}>
+                  <Link to={`/media/${e.id}`}>
                   <HStack >
+               
                     <Image h='2.5cm' w='2.5cm'  src={e.img} alt={e.title}></Image>
                     <VStack>
                       <Text align='left' fontSize='lg' fontWeight='medium'>{e.title}</Text>
                       <Text fontSize='sm'>{e.des}</Text>
                     </VStack>
                   </HStack>
-
+                  </Link>
                  </GridItem>
           ))
         }
 
       </Grid>
-      <Box w='full'display='flex'  h='15cm' backgroundColor='#E7B75F' mt='4cm' justifyContent='space-around'>
-       
-          <VStack mt='2cm'>
-            <Text fontSize='2xl' fontWeight='medium'>Product</Text>
-            <Text>Why</Text>
-            <Text>MaiilChimp</Text>
-            <Text>Product</Text>
-            <Text>Updates</Text>
-            <Text>Email</Text>
-            <Text>Marketing</Text>
-          </VStack>
-          <VStack mt='2cm'>
-            <Text fontSize='2xl' fontWeight='medium'>Resources</Text>
-            <Text>Marketing</Text>
-            <Text>Free Marketing</Text>
-            <Text>Tools</Text>
-            <Text>Marketing</Text>
-            <Text>Glossary</Text>
-            <Text>Inetegration</Text>
-            <Text>Directory</Text>
-          </VStack>
-          <VStack mt='2cm'>
-            <Text fontSize='2xl' fontWeight='medium'>Community</Text>
-            <Text>Agencies & Freelancers</Text>
-            <Text>Developers</Text>
-            <Text>Events</Text>
-           
-          </VStack>
-          <VStack mt='2cm'>
-            <Text fontSize='2xl' fontWeight='medium'>Company</Text>
-            <Text>Our Story</Text>
-            <Text>News Rooms</Text>
-            <Text>Annuals</Text>
-            <Text>Report</Text>
-            <Text>Careers</Text>
-            <Text>Accessibility</Text>
-         
-          </VStack>
-          <VStack mt='2cm'>
-            <Text fontSize='2xl' fontWeight='medium'>Help</Text>
-            <Text>Contact Us</Text>
-            <Text>Hire an </Text>
-            <Text>Expert</Text>
-            <Text>Help</Text>
-            <Text>Talk to</Text>
-            <Text>Sales</Text>
-          </VStack>
-          <VStack mt='2cm'>
-            <Image w='5cm' src='https://eep.io/images/yzco4xsimv0y/73ZAoe8O3Y7SXQLeCNTq5u/8ddf1f63b4abdf7f67149d3a9d74a0bd/MCP.svg?w=260&fm=webp&q=80' alt=''></Image>
-            <Text w='4cm' fontSize='sm'> Films, podcasts, and original series that celebrate the entrepreneurial spirit.</Text>
-            <Text >Check it out <ChevronRightIcon/></Text>
-            <Divider></Divider>
-            <Image mt='10px' w='4cm' src='https://eep.io/images/yzco4xsimv0y/5itQmdXHB6vMuAcvyWp5MR/ef5cd2cecd4c92b7029a22ec67585c65/Courier.svg?w=260&fm=webp&q=80' alt=''></Image>
-            <Text w='4cm' fontSize='sm'>Expert insights, industry trends, and inspiring stories that help you live and work on your own terms.</Text>
-            <Text>Learn More <ChevronRightIcon/></Text>
-          </VStack>
-        
-      </Box>
-      
-
-       
+      <Footer/>
 
     </div>
 

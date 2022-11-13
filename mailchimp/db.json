@@ -11,7 +11,7 @@
       "title": "Mailchimp for Salesforce", 
       "img":"https://eep.io/images/yzco4xsimv0y/51oq4AakIqo8fATlHgqHK0/02a750b1c1a16745296dca6fa7cb830c/Salesforce__1_.jpg?w=196&fm=webp&q=80",
       "des":"Sync your Mailchimp subscribers and Salesforce® leads across platforms so you can manage your contacts, view campaign stats and more.Connect Now",
-      "about":"This free integration will sync all of your Mailchimp subscribers into Salesforce® and link them to existing contacts and leads in your CRM, creating a shared view across platforms. You can also allow Mailchimp to create new leads in Salesforce®."
+      "about":"This free integration will sync all of your Mailchimp subscribers into Salesforce® and link them to existing contacts and leads in your CRM"
 
      },
      { "id": 3, 
@@ -55,7 +55,7 @@
 },
 { "id": 9, 
  "title": "Zapier", 
- "img":"https://eep.io/images/yzco4xsimv0y/2klSrOoLZKmLuGKZjKT9o3/ca400f60c2f3673f3ab9b52f4d03360d/Squarespace.jpg?w=196&fm=webp&q=80",
+ "img":"https://eep.io/images/yzco4xsimv0y/26deBkGp3A5Pj7suZ9oV7V/858e8a4603707166988a3282bca7e29b/Zapier.jpg?w=196&fm=webp&q=80",
  "des":"Zapier is the easiest way to connect Mailchimp with thousands of best-in-breed web services across all use-cases.",
  "about":"From posting your newsletters on social media to replicating mailing lists or capturing customers as new subscribers, you'll find a wealth of pre-made solutions (Zaps) for any given use-case or create your own custom Zaps."
 }
